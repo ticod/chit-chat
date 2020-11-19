@@ -11,24 +11,25 @@
 
   <!-- 메뉴 바 및 채팅방 번호 -->
   <header class="menubar">
-    <button class="menu">&gt;</button>
-    <span class="chattingroom">1번 채팅방</span>
+    <img src="resources/menuicon.png" class="menuicon">
+    <span class="chatroom">1번 채팅방</span>
   </header>
 
   <!-- 채팅 내용 박스 -->
-  <article class="chatbox">
-    <div class="chat mychat">안녕하세요~</div>
-    
-    <div class="chat youricon"></div>
-    <div class="chat yourchat">
-      반가워요 ^^ 
+  <article class="chatcontainer">
+    <div class="chatbox chat mychat">안녕하세요~</div>
+    <div class="chatbox">
+      <img src="resources/youricon1.png" class="youricon">
+      <div class="chat yourchat">
+        반가워요 ^^ 
+      </div>
     </div>
   </article>
 
   <!-- 채팅 바 -->
   <footer class="inputbar">
-    <input type="text" name="chat">
-    <input type="submit">
+    <input type="text" name="chat" class="input__chat">
+    <input type="submit" class="input__chatbutton">
   </footer>
 
 </div>
