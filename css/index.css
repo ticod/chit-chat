@@ -56,6 +56,10 @@
   overflow: hidden;
 }
 
+.menuicon, .subDropdown {
+  cursor: pointer;
+}
+
 .overlay {
   z-index: 0;
   display: none;
@@ -74,10 +78,6 @@
 
 .chat {
   max-width: 80%;
-}
-
-.subDropdown {
-  cursor: pointer;
 }
 
 /* WEB : 1920 ~ 1024 */
