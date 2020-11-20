@@ -11,15 +11,82 @@
 
   <!-- 메뉴 바 및 채팅방 번호 -->
   <header class="menubar">
-    <img src="resources/menuicon.png" class="menuicon">
+    <img src="resources/menubar.png" class="menuicon" id="dropdown">
     <span class="chatroom">1번 채팅방</span>
   </header>
+
+  <div class="dropdownmenu_close dropdownmenu" id="dropdownmenu">
+      <div class="subDropdown js_subdropdown">
+        <img src="resources/submenubar.png" class="menuicon js_subdropdownIcon">
+        아이콘 변경
+      </div> <hr>
+      <div class="subDropdown js_subdropdown">
+        <img src="resources/submenubar.png" class="menuicon js_subdropdownIcon">
+        닉네임 변경
+      </div> <hr>
+      <div class="subDropdown js_subdropdown">
+        <img src="resources/submenubar.png" class="menuicon js_subdropdownIcon">
+        1번 채팅방
+      </div> <hr>
+      <div class="subDropdown js_subdropdown">
+        <img src="resources/submenubar.png" class="menuicon js_subdropdownIcon">
+        2번 채팅방
+      </div> <hr>
+      <div class="subDropdown js_subdropdown">
+        <img src="resources/submenubar.png" class="menuicon js_subdropdownIcon">
+        3번 채팅방
+      </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  
 
   <!-- 채팅 내용 박스 -->
   <article class="chatcontainer">
     <div class="chatbox chat mychat">안녕하세요~</div>
     <div class="chatbox">
-      <img src="resources/youricon1.png" class="youricon">
+      <div class="youricon"><img src="resources/youricon1.png"></div>
+      <div class="chat yourchat">
+        반가워요 ^^ 
+      </div>
+    </div>
+    <div class="chatbox chat mychat">오늘 하루도 잘 지내셨나요? 만수무강하세요~ </div>
+    <div class="chatbox">
+      <div class="youricon"><img src="resources/youricon1.png"></div>
+      <div class="chat yourchat">
+        반가워요 ^^ 
+      </div>
+    </div>
+    <div class="chatbox chat mychat">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio adipisci incidunt nihil unde repudiandae porro ad animi fuga praesentium repellendus doloribus nemo, ipsam sit molestiae, maiores, quibusdam debitis numquam.</div>
+    <div class="chatbox">
+      <div class="youricon"><img src="resources/youricon1.png"></div>
+      <div class="chat yourchat">
+        반가워요 ^^ 
+      </div>
+    </div>
+    <div class="chatbox chat mychat">안녕하세요~</div>
+    <div class="chatbox">
+      <div class="youricon"><img src="resources/youricon1.png"></div>
+      <div class="chat yourchat">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio adipisci incidunt nihil unde repudiandae porro ad animi fuga praesentium repellendus doloribus nemo, ipsam sit molestiae, maiores, quibusdam debitis numquam.
+      </div>
+    </div>
+    <div class="chatbox chat mychat">안녕하세요~</div>
+    <div class="chatbox">
+      <div class="youricon"><img src="resources/youricon1.png"></div>
+      <div class="chat yourchat">
+        반가워요 ^^ 
+      </div>
+    </div>
+    <div class="chatbox chat mychat">안녕하세요~</div>
+    <div class="chatbox">
+      <div class="youricon"><img src="resources/youricon1.png"></div>
+      <div class="chat yourchat">
+        반가워요 ^^ 
+      </div>
+    </div>
+    <div class="chatbox chat mychat">안녕하세요~</div>
+    <div class="chatbox">
+      <div class="youricon"><img src="resources/youricon1.png"></div>
       <div class="chat yourchat">
         반가워요 ^^ 
       </div>
@@ -32,6 +99,9 @@
     <input type="submit" class="input__chatbutton">
   </footer>
 
+  <script type='module' src='js/app.js'>
+
+  </script>
 </div>
 </body>
 </html>

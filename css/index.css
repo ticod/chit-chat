@@ -15,12 +15,77 @@
   flex-wrap: nowrap;
 }
 
+.dropdownmenu > hr {
+  margin: 0;
+  padding: 0;
+  border-color: black;
+}
+
+.dropdownmenu {
+  /* dropdown settings */
+  position: absolute;
+  top: calc( 3vh + 1.5em );
+  margin-left: 0.3em;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F28B8B;
+  transition: 0.3s;
+  box-shadow: 3px 3px #464646;
+  width: 8em;
+
+  /* dropdownmenu open */
+  border-right: 1px solid black;
+  padding: 0.1em 0.5em;
+  height: 20%;
+}
+
+.dropdownmenu_close, .dropdownmenu_close * {
+  border: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+}
+
+.dropdownmenu * {
+  margin: 0.1em;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.overlay {
+  z-index: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 3vh;
+  margin: 0 auto;
+  height: 95vh;
+  width:80%;
+}
+
+.chatcontainer {
+  overflow: auto;
+  background-color: #EDE1E1;
+}
+
+.chat {
+  max-width: 80%;
+}
+
+.subDropdown {
+  
+}
+
 /* WEB : 1920 ~ 1024 */
 @media all and (min-width: 1024px) {
 
   /* ALL */
-  body {
-    font-size: 1.2em;
+  html {
+    font-size: 1.5em;
   }
 
   /* Header : Menubar */
@@ -28,7 +93,7 @@
     display: flex;
     justify-self: start;
     align-items: center;
-    /* z-index: 1; */
+    z-index: 1;
     background-color: #F28B8B;
   }
 
@@ -75,15 +140,25 @@
   }
 
   .youricon {
-    display: inline;
-    width: 2em;
-    height: 2em;
+    align-self: flex-start;
+    display: inline-flex;
+    padding: 0.2em;
     margin-right: 0.5%;
+    border: 1px solid black;
+    background-color: #ffc5c5;
+  }
+
+  .youricon img {
+    align-self: center;
+    width: 1.8em;
+    height: 1.8em;
     border: 1px solid black;
   }
 
   /* Footer : InputChat */
   footer {
+    background-color: white;
+    z-index: 1;
     display: flex;
     justify-content: space-around;
     padding: 8px;
