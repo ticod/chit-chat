@@ -45,6 +45,7 @@ function handleMouseOut(event) {
 }
 
 dropdown.addEventListener('click', handleClick);
+overlay.addEventListener('click', handleClick);
 
 for (const s in subdropdown) {
   if (!isNaN(parseInt(s))) {
