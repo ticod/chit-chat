@@ -24,11 +24,19 @@ function handleClick(event) {
 }
 
 function handleMouseOver(event) {
-  event.target.querySelector('.js_subdropdownIcon').style.transform = 'rotate(-90deg)';
+  try {
+    event.target.querySelector('.js_subdropdownIcon').style.transform = 'rotate(-90deg)';
+  } catch {
+    event.target.style.transform = 'rotate(-90deg)';
+  }
 }
 
 function handleMouseOut(event) {
-  event.target.querySelector('.js_subdropdownIcon').style.transform = 'rotate(0)';
+  try {
+    event.target.querySelector('.js_subdropdownIcon').style.transform = 'rotate(0)';
+  } catch {
+    event.target.style.transform = 'rotate(0)';
+  }
 }
 
 dropdown.addEventListener('click', handleClick);
