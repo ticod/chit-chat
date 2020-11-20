@@ -25,17 +25,22 @@ function handleClick(event) {
 
 function handleMouseOver(event) {
   try {
-    event.target.querySelector('.js_subdropdownIcon').style.transform = 'rotate(-90deg)';
+    event.target.querySelector('.js_subdropdownIcon').style.transform = 'rotate(180deg)';
+    event.target.querySelector('.js_subdropdownIcon').style.filter = "opacity(1)";
   } catch {
-    event.target.style.transform = 'rotate(-90deg)';
+    event.target.style.transform = 'rotate(180deg)';
+    event.target.style.filter = "opacity(1)";
+    
   }
 }
 
 function handleMouseOut(event) {
   try {
     event.target.querySelector('.js_subdropdownIcon').style.transform = 'rotate(0)';
+    event.target.querySelector('.js_subdropdownIcon').style.filter = "opacity(.5)"
   } catch {
     event.target.style.transform = 'rotate(0)';
+    event.target.style.filter = "opacity(.3)";
   }
 }
 
@@ -45,6 +50,7 @@ for (const s in subdropdown) {
   if (!isNaN(parseInt(s))) {
     subdropdown[s].style.transition = '0.3s';
     subdropdownicon[s].style.transition = '0.3s';
+    subdropdownicon[s].style.filter = "opacity(.3)";
     subdropdown[s].addEventListener('mouseover', handleMouseOver);
     subdropdown[s].addEventListener('mouseout', handleMouseOut);
   }
